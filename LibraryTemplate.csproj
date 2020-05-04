@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.1</PackageVersion>
+    <PackageVersion>1.2</PackageVersion>
     <PackageId>ElectricHead.CSharpLib</PackageId>
     <Title>C# Lib + GitHub Actions Build + NuGet Publishing</Title>
     <Authors>David Whitney</Authors>
