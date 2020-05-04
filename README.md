@@ -1,4 +1,4 @@
-# Library template
+# C# Lib + GitHub Actions Build + NuGet Publishing Library template
 
 This is a standard .NET Core library, with GitHub actions to publish to NuGet.
 
@@ -15,15 +15,23 @@ This is a standard .NET Core library, with GitHub actions to publish to NuGet.
 
 Create a GitHub Secret with your NuGet API Key called `NuGetApiKey`
 
+# Installing from dotnet cli
+
+Run
+
+```bash
+dotnet new -i ElectricHead.CSharpLib
+```
+
 # Installing from a git clone
 
 You can Git Clone this to somewhere on your machine then run
 
 ```bash
-dotnet new -i c:\location\of\this\repository\LibraryTemplate
+dotnet new -i c:/location/of/this/repository/LibraryTemplate
 ```
 
-to install the template.
+# Usage
 
 You can create a new project by calling
 
