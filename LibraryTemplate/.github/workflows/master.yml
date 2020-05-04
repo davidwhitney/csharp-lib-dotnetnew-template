@@ -1,0 +1,33 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build Test and Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.102'
+
+    - name: Build
+      run: dotnet build --configuration Release
+      
+    - name: Test
+      run: dotnet test
+
+    - name: Publish
+      run: dotnet pack src/LibraryTemplate/LibraryTemplate.csproj -c Release -o artifacts --include-source --include-symbols --nologo /p:BuildNumber=${{ env.GITHUB_RUN_NUMBER }} /p:Description=${{ env.GITHUB_SHA }}
+      
+    - name: NuGet push
+      run: foreach ($file in get-childitem -Path artifacts -Filter *.nupkg -Name) { dotnet nuget push artifacts/$file -s https://api.nuget.org/v3/index.json -k ${{ secrets.NuGetApiKey }} }

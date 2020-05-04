@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "David Whitney",
+  "classifications": [ "Common/Library" ],
+  "name": "C# Lib + GitHub Actions Build + NuGet Publishing",
+  "identity": "Layout",
+  "groupIdentity": "Layout",
+  "shortName": "csghlib", 
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "LibraryTemplate",
+  "preferNameDirectory": true,
+  "symbols": {
+    "id01": {
+      "type": "generated",
+      "generator": "guid",
+      "replaces": "csprojid",
+      "parameters": {
+        "format": "D"
+      }
+    },
+    "id02": {
+      "type": "generated",
+      "generator": "guid",
+      "replaces": "testcsprojid",
+      "parameters": {
+        "format": "D"
+      }
+    }
+  }
+}

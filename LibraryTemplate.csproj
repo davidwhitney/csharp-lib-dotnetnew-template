@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageId>ElectricHead.CSharpLib</PackageId>
+    <Title>C# Lib + GitHub Actions Build + NuGet Publishing</Title>
+    <Authors>David Whitney</Authors>
+    <Description>Template for a NET Core 3.1 library, with GitHub Actions for CI and NuGet publishing preconfigured.</Description>
+    <PackageTags>dotnet-new;templates;csharp</PackageTags>
+
+    <TargetFramework>netstandard3.1</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="LibraryTemplate\**\*" Exclude="LibraryTemplate\**\bin\**;LibraryTemplate\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
