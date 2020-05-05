@@ -8,7 +8,7 @@
 
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>ToolTemplate</ToolCommandName>
-    <PackageOutputPath>../artifacts</PackageOutputPath>
+    <PackageOutputPath>../../artifacts</PackageOutputPath>
   </PropertyGroup>
 
 </Project>

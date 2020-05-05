@@ -3,8 +3,8 @@
   "author": "David Whitney",
   "classifications": [ "Console" ],
   "name": "C# Tool + GitHub Actions Build + NuGet Publishing",
-  "identity": "Layout",
-  "groupIdentity": "Layout",
+  "identity": "csghtool",
+  "groupIdentity": "electrichead-csghtool",
   "shortName": "csghtool", 
   "tags": {
     "language": "C#",

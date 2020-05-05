@@ -3,8 +3,8 @@
   "author": "David Whitney",
   "classifications": [ "Common/Library" ],
   "name": "C# Lib + GitHub Actions Build + NuGet Publishing",
-  "identity": "Layout",
-  "groupIdentity": "Layout",
+  "identity": "csghlib",
+  "groupIdentity": "electrichead-csghlib",
   "shortName": "csghlib", 
   "tags": {
     "language": "C#",
