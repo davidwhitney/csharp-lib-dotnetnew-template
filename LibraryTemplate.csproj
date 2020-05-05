@@ -9,11 +9,15 @@
     <Description>Template for a NET Core 3.1, with GitHub Actions for CI and NuGet publishing preconfigured.</Description>
     <PackageTags>dotnet-new;templates;csharp</PackageTags>
 
+    <BuildNumber Condition=" '$(BuildNumber)' == '' ">1</BuildNumber>
+    <VersionPrefix>1.5.0.$(BuildNumber)</VersionPrefix>
+
     <TargetFramework>netstandard2.1</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <PackageOutputPath>artifacts</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
