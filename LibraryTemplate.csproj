@@ -2,15 +2,13 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.3</PackageVersion>
+    <BuildNumber Condition=" '$(BuildNumber)' == '' ">1</BuildNumber>
+    <PackageVersion>1.5.0.$(BuildNumber)</PackageVersion>
     <PackageId>ElectricHead.CSharpLib</PackageId>
     <Title>C# + GitHub Actions Build + NuGet Publishing Templates</Title>
     <Authors>David Whitney</Authors>
     <Description>Template for a NET Core 3.1, with GitHub Actions for CI and NuGet publishing preconfigured.</Description>
     <PackageTags>dotnet-new;templates;csharp</PackageTags>
-
-    <BuildNumber Condition=" '$(BuildNumber)' == '' ">1</BuildNumber>
-    <VersionPrefix>1.5.0.$(BuildNumber)</VersionPrefix>
 
     <TargetFramework>netstandard2.1</TargetFramework>
 
