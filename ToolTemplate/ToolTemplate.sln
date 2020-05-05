@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{500917BB-A371-4BE6-AFDA-30D2D3DECC5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{81706C15-5B84-4F4C-ADF2-4F4A23901E3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "src\ToolTemplate\ToolTemplate.csproj", "{csprojid}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Test.Unit", "test\ToolTemplate.Test.Unit\ToolTemplate.Test.Unit.csproj", "{testcsprojid}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{csprojid}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{csprojid}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{csprojid}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{csprojid}.Release|Any CPU.Build.0 = Release|Any CPU
+		{testcsprojid}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{testcsprojid}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{testcsprojid}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{testcsprojid}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{csprojid} = {500917BB-A371-4BE6-AFDA-30D2D3DECC5C}
+		{testcsprojid} = {81706C15-5B84-4F4C-ADF2-4F4A23901E3E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42B77765-89A7-4D87-B9D5-60B904911C01}
+	EndGlobalSection
+EndGlobal
